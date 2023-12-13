@@ -1,0 +1,33 @@
+@if (match) {
+    <div class="
+    hover:bg-amber-100
+    hover:border-b-green-400
+    transition-all
+    card border p-4 h-full border-b-orange-600 border-b-8 bg-slate-400 m-2 rounded-xl cursor-pointer">
+    <div class="header border-b-2 py-4 border-b-gray-300 ">
+        <p class="font-serif">{{match.date}}</p>
+        <h1 class="font-bold">{{match.teamHeading}}</h1>
+        <p>{{match.matchNumberVenue}}</p>
+    </div>
+
+    <div class="body mt-2">
+        <div class="flex justify-between px-2">
+            <p class="font-bold">{{match.battingTeam}}</p>
+            <p class="font-bold">{{match.battingTeamScore}}</p>
+        </div>
+
+        <div class="flex justify-between px-2">
+            <p class="font-bold">{{match.bowlTeam}}</p>
+            <p class="font-bold">{{match.bowlTeamScore}}</p>
+        </div>
+
+    </div>
+
+    <div class="footer mt-3 px-2">
+
+        <p class="text-red-700">{{match.liveText}}</p>
+        <p class="text-fuchsia-800">{{match.textComplete}}</p>
+    </div>
+</div>
+
+}
